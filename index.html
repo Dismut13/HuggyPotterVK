@@ -141,14 +141,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/TestVk.loader.js'
+                    unityLoader.src = 'Build/HuggyVK111.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/TestVk.data.unityweb',
-                                frameworkUrl: 'Build/TestVk.framework.js.unityweb',
-                                codeUrl: 'Build/TestVk.wasm.unityweb',
+                                dataUrl: 'Build/HuggyVK111.data.unityweb',
+                                frameworkUrl: 'Build/HuggyVK111.framework.js.unityweb',
+                                codeUrl: 'Build/HuggyVK111.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'HuggyMag',
